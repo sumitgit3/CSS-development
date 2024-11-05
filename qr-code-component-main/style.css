@@ -1,0 +1,61 @@
+@import url('https://fonts.googleapis.com/css2?family=Josefin+Sans:ital,wght@0,100..700;1,100..700&family=Outfit:wght@100..900&display=swap');
+
+:root {
+    --white : hsl(0, 0%, 100%);
+    --Slate-300: hsl(212, 45%, 89%);
+    --Slate-500: hsl(216, 15%, 48%);
+    --Slate-900: hsl(218, 44%, 22%);
+}
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+body {
+    /* flex property dont work unless flex container has defined height and width */
+    min-height: 100vh;
+    min-width: 100vw;
+    /* positioning */
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    /* colors */
+    background-color: var(--Slate-300);
+}
+
+.container {
+    /* sizing */
+    max-width: 280px;
+    height: 420px;
+    padding: 15px 15px 0px 15px;
+    margin-bottom: 5px;
+    /* color */
+    background-color: var(--white);
+    /* border */
+    border-radius: 12px;
+    /* text */
+    text-align:center;
+    font-family: "Outfit", serif;
+}
+.container img {
+    /* sizing */
+    display: block;
+    max-width:250px;
+    height:250px;
+    /* radius */
+    border-radius: 12px;
+}
+
+.heading1 {
+    font-weight: 700;
+    font-size: large;
+    color:var(--Slate-900);
+    margin: 10px;
+}
+.heading2{
+    font-weight: 300;
+    font-size:14px;
+    padding: 0px 2px 0px 2px;
+    color: var(--Slate-900);
+}
